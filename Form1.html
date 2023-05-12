@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- head tag -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Input tags.</title>
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <div class="wrapper" >
+    <h1>This is HTML form.</h1>
+
+    <form action="backend.php">
+        <!-- lable (touch on text and automaticly will be clicked on text box)-->
+        <div>
+            <label for="name">First Name:  </label>
+            <input type="text" name ="First Names" id="name">
+        </div>
+        <br>
+        <!-- text input -->
+        <div>Last Name: 
+            <input type="text" name = "Last Name" >
+        </div>
+        <div>Role: 
+            <input type="text" name="Role"
+        </div>
+
+        <!-- date -->
+        <div>DOB:
+            <input type="date" name="Date of Birth"
+        </div>
+
+        <!-- radio -->
+        <div>Gender:Male
+            <input type="radio" name="Gender"> Female<input type="radio" name="Gender">Other<input type="radio" name="Gender">
+        </div>
+
+        <!-- number input -->
+        <div>Years of experience:
+            <input type="number" name="experience"
+        </div>
+        <br>
+
+        <!-- textarea input -->
+        <div>Write about yourself:<br> 
+            <textarea name="Intro" cols="60" rows="10"></textarea>
+        </div>
+
+         <!-- drop down list (select) -->
+         <div>
+            <label for="car">car</label>
+            <select name="Car" id="car">
+                <option value="supra">supra</option>
+                <option value="lambo">lambo</option>
+                <option value="mustang">mustang</option>
+                <!-- by default selected -->
+                <option value="select a car" selected>select a car</option>
+            </select>
+        </div>
+
+        <!-- checkbox -->
+        <div>I accept that above data is 100% true.:
+            <input type="checkbox" name="accept" checked>
+        </div>
+
+        <!-- submit and reset -->
+        <div>
+            <input type="submit" value=" Submit Now">
+            <input type="reset" value=" Reset"
+        </div>
+        <br>
+    </form>
+</div>
+</body>
+</html>
